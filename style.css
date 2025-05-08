@@ -26,7 +26,6 @@ header h1{
     font-weight: 700;
     font-size: 30px;
     letter-spacing: 1px;
-    text-transform: uppercase;
     color: #5fcf80;
     margin-left: 7%;
     font-family: "Raleway", sans-serif;
@@ -44,7 +43,7 @@ margin-left: 45%;
 header ul li a{
     text-decoration: none;
     font-family: "Poppins", sans-serif;
-    transition: ease-in;
+    transition:0.2s ease-in ;
     color: black;
     
 }
@@ -189,7 +188,7 @@ main button{
 }
 /* ___________________________________________________________________________________ */
 .content3section{
-    margin-left: 90px;
+    margin-left: 55px;
     display: flex;
     gap: 30px;
 }
@@ -232,7 +231,7 @@ margin-top: 10px;
 .smallCards{
     display: grid;
     margin-top: 50px;
-    margin-left: 100px;
+    margin-left: 54px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto;
     row-gap: 20%;
@@ -250,7 +249,8 @@ margin-top: 10px;
 /* ______________________________________________________________ */
 .Section4{
     margin-top:170px ;
-    margin-left: 100px;
+    margin-left: 66px;
+    margin-right: 66px;
 }
 
 .Section4 h2{
@@ -312,12 +312,12 @@ margin-top: 10px;
 .section5{
     display: flex;
     gap: 10px;
-    margin: 100px 100px;
+    margin: 100px 65px;
 }
 /* _____________________________________________________________________________ */
 footer{
     background-color: #969ba315;
-    padding: 5px;
+    padding: 5px 0px;
     display: flex;
     justify-content: space-between;
 
@@ -411,7 +411,9 @@ article p{
     text-align: center;
 }
 
+.mainContainer{
 
+}
 
 /* _______________________________________________________________________ */
 
