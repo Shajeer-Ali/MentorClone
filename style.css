@@ -11,8 +11,16 @@ display: flex;
 background-color: #FFF;
 padding: 15px;
 align-items: center;
+position: fixed;
+z-index: 1;
+width: 100vw;
 
 
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
 }
 header h1{
     font-weight: 700;
@@ -31,6 +39,30 @@ margin-left: 45%;
     gap: 30px;
     align-items: center;
 }
+
+/* ____________________________________ */
+header ul li a{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    transition: ease-in;
+    color: black;
+    
+}
+header ul li a:hover{
+     color:#5FCF80;
+     cursor: pointer;
+}
+header ul li select option{
+    font-family: "Poppins", sans-serif;
+    transition: ease-in;
+    color: black;
+    font-size: 16px;
+}
+
+header nav{
+    margin-left: -175px;
+}
+/* ___________________________________________ */
 header ul li button{
     color: #fff;
     background: #5fcf80;
@@ -56,12 +88,14 @@ main{
     
 }
 main h2{
-    padding-top:7% ;
+    padding-top:15% ;
     padding-left: 7%;
     font-size: 48px;
     font-weight: 700;
     color: #fff;
     font-family: "Raleway", sans-serif;
+    position: sticky;
+    z-index: 1;
  
 }
 main p{
@@ -341,3 +375,156 @@ align-items: center;
 text-align: center;
 justify-content: center;
 }
+/* ______________________________________________ */
+#dropdownNav{
+    border: none;
+    outline: none;
+}
+/* //////////////////////////////////////////////////About//////////////////////////////////////////////// */
+
+article{
+    position: absolute;
+    background-color: #5FCF80;
+    width: 100vw;
+    margin-top: 130px;
+    height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+}
+article h1{
+    font-size:38 px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    margin-bottom: 10px;
+
+}
+article p{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    width: 53%;
+    text-align: center;
+}
+
+
+
+/* _______________________________________________________________________ */
+
+@media only screen and (max-width: 1275px)  {
+    header ul{
+    display: none;
+    }
+    .cardsCourses{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .Section4cards{
+        width: 50%;
+    }
+    .section5{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    footer{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        
+    }
+    .content1{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+
+    }
+    .content1 img{
+        margin-top: 35px; 
+    }
+    .content2Section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .content3section{
+        display: flex;
+        flex-direction: column;  
+        align-items: center;
+    }
+    .smallCards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #courses{
+        padding: 40px;
+    }
+    .cardMain button{
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 720px){
+    main h2 {
+        padding-top: 30%;
+    }
+    main p {
+        font-size: 14px;
+    }
+    .content1{
+        width: 53vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 22%;
+    }
+    .cardMain{
+        width: 70%;
+    }
+    .content3subcards{
+        width: 62%;
+    }
+    .smallCards{
+        margin-left: 20px;
+    }
+    .cardsCourses{
+        margin-left: -28%;
+    }
+    .Section4cards{
+margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 320px){
+
+header h1{
+    font-size: 21px;
+}
+    main h2{
+        padding-top: 60%;
+        font-size: 23px;
+    }
+    .content1 section h3{
+        font-size: 18px;
+    }
+    .content1 section p{
+        font-size: 12px;
+    }
+    .content1 section ul li{
+        font-size: 12px;
+    }
+    .content3section{
+        width: 116%;
+        margin-left: 0;
+    }
+    .btnDiv b{
+        display: none;
+    }
+}
+
+
